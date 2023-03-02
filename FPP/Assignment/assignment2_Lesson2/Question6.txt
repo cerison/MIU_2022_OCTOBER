@@ -1,0 +1,2 @@
+	You can’t change the size of the array once you create it. 
+	You can’t insert or delete the elements once you create an array.

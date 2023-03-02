@@ -1,0 +1,5 @@
+3#
+
+A. 0 it is default value of array of integer
+B. null
+C. it will create error

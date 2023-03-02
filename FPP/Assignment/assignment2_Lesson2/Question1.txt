@@ -1,0 +1,6 @@
+
+#1. 
+it tries to assign invalid ( negative ) index of array, 
+so that ArrayIndexOutOfBoundsException will occur
+
+

@@ -1,0 +1,51 @@
+#Q1
+
+Ans : c) Compilation error
+
+=====================================================================================================================
+Q3: What is up-casting and down casting, explain and give code example of each?
+
+class Parent{
+
+......
+
+}
+
+class Child extends Parent{
+
+.....
+
+}
+
+Upcasting: 
+-typecasting of a child object to a parent object.
+-can access the parent class members but it is not possible to access all the child class members (only the overidden methods)
+-    Parent p = new Child();
+
+Downcasting:
+-typecasting of a parent object to a child object. 
+		Parent p= new Parent();
+-      Child c = (Child)p;
+
+=====================================================================================================================================
+
+Static Binding/early binding
+
+---object is linked during compile-time
+---Static binding in polymorphism means the same method name with a different signature. 
+---In the same class we have multiple methods with the same name but with different parameters is called a Static class. 
+---The functionality to achieve the Static binding Overloading method is used.
+
+Run-time /Dynamic binding / Late binding / overriding. 
+---when there are methods with the same parameters. 
+---the file is resolved at a Run-time and not at a compile-time
+---overriding method provides functionality of  Dynamic binding. 
+---In Dynamic binding polymorphism, the code is extended and becomes flexible and easy to manage.
+
+In the practical code addBonus() methods provides functionality of dynamic binding
+
+====================================================================================================================================
+
+Answer: Later in future other assets may be required to be added
+so An abstract superclass Asset with four subclasses Appliance, Automobile, Furniture, and CompactDisc is a good design. 
+--Any number of different asset types may be added in the future by subclassing Asset and implementing any abstract methods it declares.
