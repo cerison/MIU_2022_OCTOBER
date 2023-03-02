@@ -1,0 +1,37 @@
+1. Collectors.joining
+2. Collectors.SummarizingInt - SummaryStatistics, min, max,count, sum and average
+3. Different filters for each criteria - Problem Requirement
+4. Use Primitive IntStream iterate and limit with your logic to generate squares
+5. limit and skip
+
+"aaa", "bbb", "ccc", "ddd", "eee", "fff", "ggg", "hhh", "iii"
+ 0       1      2      3      4      5      6      7      8            
+streamSection(nextStream(), 0, 3)
+output: aaa, bbb, ccc, ddd
+
+streamSection(nextStream(), 2, 5)
+ccc, ddd, eee, fff
+
+6. Reduce,also can try with flatmap how works
+7. a)Startup code given, inside main class perform the task A. 
+   Need to add a method getfullname() returns firstname + last name 
+
+   b) Identity the inputs of the problem (a), 
+      Convert into the Suitable Functional Interface.
+      Create a Lambda implementation of Fucntional interface and
+      decalred as public static final inside Lambda Library class. 
+      Whenever needed call from the Lambda libary class.
+      
+8)  Perform the queries given in the PuttingIntoPractice class.
+      Refer : streamandoperations package
+9) Perform the queies given in the problem for the Dish class. 
+      Refer : streamandoperations package
+10) Perfomm the queries in ConstructorReference class
+
+In your exam questions are similar like Problem 7, 8,9 & 10 to solve the queries
+
+	
+  
+
+
+
