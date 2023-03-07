@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        header{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        header a{
+            text-decoration: none;
+            color: black;
+            margin: 3px;font-size: 14px;
+            font-family: arial,sans-serif;
+            color: #202124;
+        }
+        .leftNav{
+            display: flex;
+            gap: 14px;
+            align-items: center;
+            margin-left: 13px;
+        }
+        .rightNav{
+            width: 40%;
+            display: flex;
+            justify-content: flex-end;
+            gap: 9px;
+            align-items: center;
+            margin-right: 2px;
+        }
+        .rightNav img{
+            width: 38px;
+            height: 38px;
+            margin: 2px;
+        }
+
+
+        section .google{
+            padding-top: 5.9%;
+            text-align: center;
+        }
+        section .inputBox{
+            width: 37.5%;
+            min-width: 300px;
+            padding: 3px;
+            border: 1px solid #ddd;
+            border-radius: 40px;
+            overflow: auto;
+            margin: auto;
+            margin-top: 23px;
+        }
+        .inputBox img{
+            width: 34px;
+            margin: 1px 2px;
+        }
+        .bottomNav{
+            text-align: center;
+            width: 50%;
+            padding: 5px;
+            margin: auto;
+            margin-top: 13px;
+        }
+        .bottomNav span{
+            display: inline-block;
+            background-color: #f8f9fa;
+            border: 1px solid #f8f9fa;
+            border-radius: 4px;
+            color: #3c4043;
+            font-family: Roboto,arial,sans-serif;
+            font-size: 14px;
+            margin: 11px 4px;
+            padding: 10px 16px;
+            cursor: pointer;
+        }
+
+    
+        footer{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: #f2f2f2;
+        }
+        .myFooter{
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 30px;
+        }
+        .myFooter a{
+            font-size: 14px;
+            font-family: arial,sans-serif;
+            color: #666;
+            margin: 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="leftNav">
+            <a href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a>
+            <a href="https://store.google.com/US/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US&pli=1">Store</a>
+        </div>
+        <div class="rightNav">
+            <a href="https://mail.google.com/mail/u/0/">Gmail</a>
+            <a href="https://www.google.com/imghp?hl=en&ogbl">Images</a>
+            <img src="app.png"/>
+            <img src="account.png"/>
+        </div>
+    </header>
+    <section>
+        <div class="google"><img src="google.png"/></div>
+        <div class="inputBox">
+            <img src="icon.png" style="float: left;"/>
+            <img src="image.png" style="float: right; margin-left: 4px;"/>
+            <img src="mic.png" style="float: right;"/>
+        </div>
+        <div class="bottomNav">
+            <span>Google Search</span>
+            <span>I am Feeling Lucky</span>
+        </div>
+    </section>
+    <footer>
+        <div class="myFooter">
+            <div class="leftLink">
+                <a href="#">Advertising</a>
+                <a href="#">Business</a>
+                <a href="#">How Search works</a>
+            </div>
+            <div class="rightLink">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Settings</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        window.onload = function(){
+            // $("#myId").css('color','red');
+            // console.log($("#myId").attr('id'));
+            // $("#myId").attr('class','myclass');
+        }
+
+        function  swapme(){
+
+            //this.style.color = "red"; //????
+            this.className = "highlighted";
+            console.log(this)
+            let val1 = $('#first').val();
+            let val2 = $('#second').val();
+
+            $('#first').val(val2);
+            $('#second').val(val1);
+
+            // $('#first').replaceWith('<label id="first">'+val2+'</label>');
+            // $('#second').replaceWith('<label id="second">'+val1+'</label>');
+
+        }
+
+        function addLabel(){
+            console.log($('p'))
+            $('p').children().each(function(id, elme){
+                console.log(id);
+                let ch = $(elme);
+                if(id == 1){
+                    $(ch).after('<label> label3</label>');
+                }
+            });
+        }
+
+        function toggle(){
+            if($('p').css('visibility') == 'hidden'){
+                $('p').css('visibility','');
+            }else{
+                $('p').css('visibility','hidden');
+            }
+        }
+
+        $(document).ready(function(){
+            
+        });
+    </script>
+</head>
+<body>
+    <!-- <div id = "myId">Hello</div> -->
+
+    <input type="text" id = "first" value="first">
+    <br/>
+    <input type="text" id = "second" value="second">
+    <button onclick="swapme()">swap</button>
+
+    <!-- <p>
+        <label>label1</label>
+        <label>label2</label>
+        <label>label4</label>
+    </p>
+    <button onclick="addLabel()">AddLabel</button> -->
+
+    <p style="visibility: hidden;">Text</p>
+    <button onclick="toggle()">toggle</button>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,tr,th,td{
+            border: 1px solid;
+        }
+    </style>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        // function swap(){
+        //     var tx1 = $("#txt1").val();
+        //     var tx2 = $("#txt2").val();
+        //     $("#txt1").val(tx2);
+        //     $("#txt2").val(tx1);
+        // }
+        function addLabel(){
+            let parent = $("div").children();
+            parent.each(function(id, element){
+                if(id == 2){
+                    //$(element).after('<label>Label4</label>');
+                    $('<label>Label4</label>').insertAfter($(element));
+                }
+            });
+        }
+        function addTable(){
+            var table = $('<table></table>');
+
+            var tr = $('<tr><th>No</th><th>Name</th><th>Id</th></tr>');
+            table.append(tr);
+
+            var tr = $('<tr><td>1</td><td>Mussie</td><td>24253</td></tr>');
+            table.append(tr);
+
+            var tr = $('<tr><td>2</td><td>Sewit</td><td>45892</td></tr>');
+            table.append(tr);
+
+            $('body').append(table);
+        }
+
+        function changeCell(){
+            var td = $('table').children().children();
+            td.each(function(id,element){
+                let el = $(element);
+                if(el.html() == '24253'){
+                    el.html('56656565');
+                }
+            });
+        }
+
+        function addRow(){
+            var table = $('table tr');
+            var el = '<tr><td>Third Row Col 1</td><td>Third Row Col 2</td></tr>';
+            //table.append(el);
+            var secEl = table.eq(0);
+            secEl.after(el);
+        }
+
+    </script>
+</head>
+<body>
+    <!-- <input type = "text" id = "txt1" value = "Text1">
+    <input type = "text" id = "txt2" value = "Text2">
+    <button onclick="swap()">Swap</button> -->
+
+    <!-- <div>
+        <label>Label1</label>
+        <label>Label2</label>
+        <label>Label3</label>
+
+        <label>Label5</label>
+    </div>
+    <button onclick="addLabel()">AddLabel</button> -->
+
+    <!-- <button onclick="addTable()">addTable</button>
+    <button onclick="changeCell()">changeMe</button> -->
+    <button onclick="addRow()">addRow</button>
+    <table id="table">
+        <tr>
+            <td>First Row Col 1</td>
+            <td>First Row Col 2</td>
+        </tr>
+        <tr>
+            <td>Second Row Col 1</td>
+            <td>Second Row Col 2</td>
+        </tr>
+    </table>
+</body>
+</html>

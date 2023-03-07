@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        let arrays = [
+                        {name:'rose',color:'red'},
+                        {name:'lily',color:'white'},
+                        {name:'jinnia',color:'pink'}
+                    ];
+
+        function convertToSelect(){
+            var fruits = ["apple","banana","pear"];
+            var sel = $('<select><select>');
+            for(let el of fruits){
+                sel.append('<option>'+el+'</option>');
+            }
+            $('div').append(sel);
+        }
+
+        function convertToTable(){
+            var table = $('<table></table>')
+            for(var ele of arrays){
+                table.append('<tr>'+'<td>'+ele.name+'</td><td>'+ele.color+'</td>'+'</tr>');
+            }
+            $('div').append(table);
+        }
+        
+        function convertToList(){
+            var ol = $('<ol><ol>');
+            for(var ele of arrays){
+                ol.append('<li>'+ele.name+' '+ele.color+'</li>');
+            }
+            $('div').append(ol);
+        }
+        function selectedOption(){
+            var selected = $('[name="mySelect"] option:selected');
+            for(let li of selected){
+                $('div').after('<p>'+$(li).html()+'</p');
+            }
+        }
+        function checkedRadio(){
+            var selected = $('[name="checkYou"]:checked');
+            for(let li of selected){
+                $('div').after('<p>'+$(li).val()+'</p');
+            }
+        }
+    </script>
+    <style>
+        table,tr,td,th{
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="convertToSelect()">convertToSelect</button>
+    <button onclick="convertToTable()">convertToTable</button>
+    <button onclick="convertToList()">convertToList</button>
+    
+    <div></div>
+
+    <button onclick="selectedOption()">selectedOption</button>
+    <select name="mySelect" multiple>
+        <option>one</option>
+        <option>two</option>
+        <option>three</option>
+    </select>
+    <input type="checkbox" name="checkMe" value="java">java
+    <input type="checkbox" name="checkMe" value="python">python
+    <input type="checkbox" name="checkMe" value="PHP">PHP
+    <button onclick="checkedOption()">checkedOption</button>
+
+    <input type="radio" name="checkYou" value="java">java
+    <input type="radio" name="checkYou" value="python">python
+    <input type="radio" name="checkYou" value="PHP">PHP
+    <button onclick="checkedRadio()">checkedRadio</button>
+</body>
+</html>

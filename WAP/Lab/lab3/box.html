@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            border: 2px solid blue;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        img{
+            width: 70px;
+            position: absolute;
+        }
+        .img1{
+            left:0;
+            top:0
+        }
+        .img2{
+            left:0;
+            bottom:0;
+        }
+        .img3{
+            right:0;
+            top:0;
+        }
+        .img4{
+            right:0;
+            bottom:0;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <img src="download.png" class="img1"/>
+        <img src="download.png" class="img2"/>
+        <img src="download.png" class="img3"/>
+        <img src="download.png" class="img4"/>
+        <p>Lorem ipsum dolor sit amet con</p>
+    </div>
+</body>
+</html>

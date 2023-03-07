@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* textarea { 
+            resize: none;
+            width: 300px; 
+            height: 200px; } */
+    </style>
+</head>
+<body>
+    <textarea rows="5" cols="5">
+Type your comments here.
+Type your comments here.
+Type your comments here.
+Type your comments here.
+    </textarea>
+    <br/>
+    <select name="favoritecharacter" size="4" multiple>
+        <option>Jerry</option>
+        <option>George</option>
+        <option>Kramer</option>
+        <option disabled>Elaine</option>
+        <option selected>Newman</option>
+    </select>
+        <br/>
+    <fieldset>
+        <legend>Credit cards:</legend>
+        <input type="radio" name="cc" value="visa" checked="checked" /> Visa
+        <input type="radio" name="cc" value="mastercard" /> MasterCard
+        <input type="radio" name="cc" value="amex" /> American Express
+    </fieldset>
+
+
+    <div style="display:grid;width:fit-content; grid-template-columns:1fr 2fr;gap:10px;">
+        <label>First Name</label>
+        <div><input type='text'/></div>
+        <label>Last Name</label>
+        <div><input type='text'/></div>
+        <div>Gender</div>
+        <div><input type='radio'/>Male <input type='radio'/>Female</div>
+        <label><button>Submit</button></label>
+    </div>
+
+
+    <div style="display:grid;width:fit-content; grid-template-columns:1fr 2fr;gap:10px;">
+        <label>First Name</label>
+        <div style="display:flex;align-items:center;background-color: lightgray;border-radius:5px;">
+            <img src='download.png' style="width:20px;height:20px;object-fit:contain;">
+            <input type='text' />
+            <img src='download.png' style="width:20px;height:20px;object-fit:contain;">
+        </div>
+    </div>
+</body>
+</html>

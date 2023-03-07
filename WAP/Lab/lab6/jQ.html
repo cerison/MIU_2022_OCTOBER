@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        function check(){
+            var ele = $('[class = "op"]:selected').html();
+            var ele = $('[class = "op"]')[2].selected;
+            console.log(ele)
+        }
+    </script>
+</head>
+<body>
+    <select >
+        <option class="op">1</option>
+        <option class="op">2</option>
+        <option class="op" selected>3</option>
+    </select>
+    <button onclick="check()">check</button>
+</body>
+</html>

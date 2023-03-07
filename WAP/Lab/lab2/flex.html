@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .myflex{
+            border: 1px solid;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .myflex div{
+            border: 1px solid;
+        }
+        .fl1{
+            width: 10%;
+            flex-grow: 1;
+        }
+        .fl2{
+            width: 30%;
+            flex-grow: 2;
+        }
+        .fl3{
+            width: 40%;
+            flex-grow: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="myflex">
+        <div class="fl1">1</div>
+        <div class="fl2">2</div>
+        <div class="fl3">3</div>
+    </div>
+    <!-- <div class="mygrid">
+        <div class="fl1">1</div>
+        <div class="fl2">2</div>
+        <div class="fl3">3</div>
+    </div> -->
+</body>
+</html>
